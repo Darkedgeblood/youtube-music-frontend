@@ -12,9 +12,9 @@ const App = () => {
     setVideos([]);
 
     try {
-      const response = await axios.get("http://localhost:5000/top-music-videos", {
+      const response = await axios.get("https://your-render-app.onrender.com/top-music-videos", {
         params: { year },
-      });
+      });      
       setVideos(response.data);
     } catch (error) {
       console.error("Error fetching videos:", error);
