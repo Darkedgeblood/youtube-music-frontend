@@ -12,7 +12,7 @@ const App = () => {
     setVideos([]);
 
     try {
-      const response = await axios.get("https://your-render-app.onrender.com/top-music-videos", {
+      const response = await axios.get("https://youtube-music-analyzer.onrender.com/top-music-videos", {
         params: { year },
       });      
       setVideos(response.data);
